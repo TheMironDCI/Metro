@@ -108,6 +108,7 @@ section {
 #first .navbar ul .dropdown-item {
   background-color: white;
   transition-duration: 0.3s;
+  color: black !important;
 }
 #first .navbar ul .dropdown-item:hover {
   background-color: black;
@@ -224,7 +225,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 9;
   color: rgb(0, 0, 0);
   border-radius: 50%;
   cursor: pointer;

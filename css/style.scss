@@ -95,6 +95,7 @@ section {
             .dropdown-item{
                 background-color: white;
                 transition-duration: .3s;
+                color: black !important;
                 &:hover {
                     background-color: black;
                     color: white;
@@ -199,7 +200,7 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 99;
+            z-index: 9;
             color: rgb(0, 0, 0);
             border-radius: 50%;
             cursor: pointer;
