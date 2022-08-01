@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  margin-bottom: 50px !important;
+}
+
+#first {
+  padding-bottom: 50px;
+}
+@media (max-width: 576px) {
+  #first {
+    padding: 0;
+    margin: 0;
+  }
+}
+#first .navbar {
+  padding: 30px 0;
+}
+#first .navbar .container {
+  position: relative;
+}
+@media (max-width: 576px) {
+  #first .navbar .container {
+    padding: 0;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  #first .navbar .logo {
+    width: 50%;
+    margin: 0 20px;
+  }
+}
+#first .navbar .burger.burgerCol {
+  color: white;
+}
+@media (max-width: 576px) {
+  #first .navbar .burger {
+    z-index: 9999;
+  }
+}
+#first .navbar span {
+  display: none;
+}
+@media (max-width: 576px) {
+  #first .navbar span {
+    display: block;
+    width: 50%;
+    z-index: 9999;
+    text-align: end;
+    padding: 20px 0;
+  }
+}
+#first .navbar span i {
+  margin-right: 35px;
+  font-size: 32px;
+}
+#first .navbar span .mobileNav {
+  width: 100%;
+}
+@media (max-width: 576px) {
+  #first .navbar span .mobileNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  #first .navbar .menu {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    position: absolute;
+    top: -180%;
+  }
+}
+#first .navbar .menu.menuBlock {
+  -webkit-animation: navtog 0.5s;
+          animation: navtog 0.5s;
+}
+@media (max-width: 576px) {
+  #first .navbar .menu.menuBlock {
+    display: block;
+    top: 0%;
+    left: 0;
+    padding: 40px 0;
+    height: 100vh;
+    z-index: 99;
+  }
+}
+#first .navbar ul {
+  display: flex;
+}
+@media (max-width: 576px) {
+  #first .navbar ul {
+    display: block;
+    text-align: start;
+    width: 100%;
+    padding: 0;
+  }
+}
+#first .navbar ul .dropdown-item {
+  background-color: white;
+  transition-duration: 0.3s;
+}
+#first .navbar ul .dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+#first .navbar ul .dropdown-menu.dropdownBl {
+  display: block;
+  top: 140%;
+  left: 0;
+}
+#first .navbar ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+@media (max-width: 576px) {
+  #first .navbar ul li {
+    margin: 10px 0;
+    color: white;
+  }
+}
+#first .navbar ul li a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: black;
+}
+@media (max-width: 576px) {
+  #first .navbar ul li a {
+    color: white;
+  }
+}
+#first .navbar .buttons {
+  margin-left: 150px;
+}
+#first .navbar .buttons i {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 32px;
+}
+#first .navbar .buttons p {
+  font-size: 22px;
+}
+@media (max-width: 576px) {
+  #first .navbar .buttons {
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 576px) {
+  #first .navbar {
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  #first .mobileBlock {
+    display: none;
+  }
+}
+#first .buttonHead {
+  width: 20%;
+}
+#first .buttonHead .btn {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  padding: 5px 30px;
+  font-size: 20px;
+}
+@media (max-width: 576px) {
+  #first .buttonHead .btn {
+    width: 100px;
+    padding: 0;
+  }
+}
+#first .buttonHead .btn i {
+  margin-right: 10px;
+}
+#first .searchHead {
+  width: 80%;
+}
+@media (max-width: 576px) {
+  #first .searchHead {
+    width: 150px;
+    margin-left: 70px;
+  }
+}
+#first .searchHead .input-group {
+  height: 100%;
+}
+@media (max-width: 576px) {
+  #first .searchHead .input-group {
+    width: 200px;
+  }
+}
+#first .searchHead .input-group button {
+  height: 100%;
+}
+
+#second {
+  position: relative;
+}
+#second .container-fluid {
+  display: flex;
+  align-items: center;
+}
+#second .btnArrow {
+  text-align: end;
+}
+#second .btnArrow i {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 45px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  #second .btnArrow i {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+}
+#second .btnArrow i:first-child {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  transform: translateY(-50%);
+}
+@media (max-width: 576px) {
+  #second .btnArrow i:first-child {
+    left: 80%;
+  }
+}
+#second .btnArrow i:last-child {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+@media (max-width: 576px) {
+  #second .btnArrow i:last-child {
+    left: 0;
+  }
+}
+#second .container {
+  position: relative;
+}
+#second .box.show {
+  display: block;
+  -webkit-animation: boxAnim 1s;
+          animation: boxAnim 1s;
+}
+#second .box {
+  overflow: hidden;
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #F9F9F9;
+  padding: 50px;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 576px) {
+  #second .box {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+}
+#second .box h1 {
+  margin: 30px 0;
+}
+@media (max-width: 576px) {
+  #second .box h1 {
+    margin: 0;
+  }
+}
+#second .secondImages {
+  text-align: center;
+}
+#second .secondBoxes {
+  width: 50%;
+}
+#second .secondBoxes img {
+  width: 50%;
+}
+#second .secondBoxes a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+#second .secondBoxes a:hover .under {
+  left: 0;
+}
+#second .secondBoxes .under {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  transition-duration: 0.2s;
+  background-color: black;
+  width: 100px;
+  height: 2px;
+}
+
+@-webkit-keyframes navtog {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navtog {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes boxAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes boxAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
